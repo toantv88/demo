@@ -151,3 +151,33 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* footer */
+
+footer {
+  margin-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #FFFFF;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}

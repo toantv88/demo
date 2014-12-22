@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 	
 	def show
-
 		@user = User.find(params[:id])
 	end
 
@@ -11,8 +10,8 @@ class UsersController < ApplicationController
 
   	def create
       @user =User.create(user_params)
-      if @user.blank?
-        redirect_to :action =>'home', :controller => "homes"  
+      if @user
+        redirect_to :action => "home" ,:controller =>"homes" 
       else
         render 'new'
       end
