@@ -2,11 +2,18 @@
 
 <div class="center jumbotron">
 	<% flash.each do |message_type, message| %>
-        <div class="alert alert-danger %>"><%= message %></div>
+        <p class="alert-danger"><%= message %></p>
       <% end %>
 
   <h1>Welcome to the Exampple</h1>
   
   <%= link_to "Sign up!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
+<script>
+$(document).ready(function(){
+   setTimeout(function(){
+      $("p.alert-danger").hide("slow");
+   },2000);
+});
+</script>
 
