@@ -12,8 +12,8 @@ class UsersController < ApplicationController
   	def create
       @user =User.new(user_params)
       if @user.save
-        format.html { redirect_to :action =>'home', :controller => "homes", :notice => 'Message sent!' }
-         
+        flash.now[:notice] = 'Dang ky thanh cong'
+        redirect_to :action =>'home', :controller => "homes" 
       else
         render 'new'
       end

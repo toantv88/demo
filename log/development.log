@@ -56708,3 +56708,135 @@ ArgumentError (too few arguments):
   Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 10:47:31 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 10:47:32 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-23 10:47:40 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-23 10:47:51 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"123456", "email"=>"123456@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-23 03:47:51.322132"], ["email", "123456@gmail.com"], ["name", "123456"], ["password_digest", "$2a$10$dGR35KrQV.B/tVGALQtfve6Ouxd2uiuEivV6.1BYCAlREWEPdhI.G"], ["updated_at", "2014-12-23 03:47:51.322132"]]
+  [1m[35m (136.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 211ms
+
+ArgumentError (too few arguments):
+  app/controllers/users_controller.rb:15:in `format'
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
