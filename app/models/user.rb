@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
   validates :name, :presence =>  true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   validates :email, presence:   true,
-                    format:     { with: VALID_EMAIL_REGEX }                  
+                    format:     { with: VALID_EMAIL_REGEX }  
+  validates_uniqueness_of :email, :allow_blank => true                
   has_secure_password
   
 
@@ -21,11 +22,5 @@ class User < ActiveRecord::Base
     BCrypt::Password.create(string, cost: cost)
   end
 
-  def authenticated?(remember_token)
-    BCrypt::Password.new(remember_digest).is_password?(remember_token)
-  end
-
-  def forget
-    update_attribute(:remember_digest, nil)
-  end
+ 
  end

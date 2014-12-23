@@ -1,11 +1,12 @@
-<% if flash[:notice] %>
-    <div class="alert alert-danger">
-      <%= 'flash[:notice]' %>
-  </div>
-<% end %>
-<div class="center jumbotron">
-  <h1>Welcome to the Exampple</h1>
 
+
+<div class="center jumbotron">
+	<% flash.each do |message_type, message| %>
+        <div class="alert alert-danger %>"><%= message %></div>
+      <% end %>
+
+  <h1>Welcome to the Exampple</h1>
+  
   <%= link_to "Sign up!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
