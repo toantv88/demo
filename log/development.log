@@ -58653,3 +58653,1727 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 12:59:12 +0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 12:59:12 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-23 13:01:28 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 86.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-12-23 13:01:31 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '1@gmail.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:37 +0700
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"123456@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '123456@gmail.com' LIMIT 1
+Redirected to http://localhost:4000/users/70
+Completed 302 Found in 79ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "70"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:01:45 +0700
+
+
+Started GET "/users/70/edit" for 127.0.0.1 at 2014-12-23 13:01:48 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"70"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "70"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 108.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/70" for 127.0.0.1 at 2014-12-23 13:02:00 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"123456", "phone"=>"admin ", "address"=>"ha nam", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"70"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "70"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = '123456@gmail.com' AND "users"."id" != 70) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = 70  [["address", "ha nam"], ["phone", "admin "], ["updated_at", "2014-12-23 06:02:00.690371"]]
+  [1m[36m (173.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:4000/users/70
+Completed 302 Found in 182ms (ActiveRecord: 173.9ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2014-12-23 13:02:00 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "70"]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:02:01 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.8ms)
+
+
+Started GET "/users/70/edit" for 127.0.0.1 at 2014-12-23 13:02:16 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "70"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 84.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/70" for 127.0.0.1 at 2014-12-23 13:02:21 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"123456", "phone"=>"admin ", "address"=>"ha nam", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00000003eb4bc0 @tempfile=#<Tempfile:/tmp/RackMultipart20141223-5294-yr85lq>, @original_filename="aaa.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"aaa.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save changes", "id"=>"70"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "70"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-gwq3i7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]'
+Command :: convert '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]' -auto-orient -resize "300x300>" '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami20141223-5294-105tt5u'
+Command :: file -b --mime '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami20141223-5294-105tt5u'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]'
+Command :: convert '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami.jpg[0]' -auto-orient -resize "100x100>" '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami20141223-5294-10r9m8i'
+Command :: file -b --mime '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1le4ami20141223-5294-10r9m8i'
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."email" = '123456@gmail.com' AND "users"."id" != 70) LIMIT 1
+Command :: file -b --mime '/tmp/47bce5c74f589f4867dbd57e9ca9f80820141223-5294-1teocd4.jpg'
+Binary data inserted for `string` type on column `avatar_content_type`
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "avatar_content_type" = ?, "avatar_file_name" = ?, "avatar_file_size" = ?, "avatar_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = 70[0m  [["avatar_content_type", "image/jpeg"], ["avatar_file_name", "aaa.jpg"], ["avatar_file_size", 23162], ["avatar_updated_at", "2014-12-23 06:02:21.136826"], ["updated_at", "2014-12-23 06:02:21.658621"]]
+  [1m[35m (190.9ms)[0m  commit transaction
+Redirected to http://localhost:4000/users/70
+Completed 302 Found in 730ms (ActiveRecord: 192.0ms)
+
+
+Started GET "/users/70" for 127.0.0.1 at 2014-12-23 13:02:21 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 70]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "70"]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 95ms (Views: 91.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:02:22 +0700
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:03:14 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `forget' for #<User:0x0000000528c580>):
+  app/helpers/sessions_helper.rb:28:in `forget'
+  app/helpers/sessions_helper.rb:34:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:03:33 +0700
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:03:35 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `forget' for #<User:0x00000004c306f0>):
+  app/helpers/sessions_helper.rb:28:in `forget'
+  app/helpers/sessions_helper.rb:34:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-23 13:05:33 +0700
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:05:39 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:05:40 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `forget' for #<User:0x00000003752e68>):
+  app/helpers/sessions_helper.rb:28:in `forget'
+  app/helpers/sessions_helper.rb:34:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-23 13:07:02 +0700
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1[0m
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:04 +0700
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:07:05 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 70 LIMIT 1
+Redirected to http://localhost:4000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:07:05 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:06 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-23 13:07:07 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"1254", "email"=>"1254@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = '1254@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 155ms (Views: 80.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:17 +0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"1254", "email"=>"12542@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = '12542@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-23 06:07:24.632636"], ["email", "12542@gmail.com"], ["name", "1254"], ["password_digest", "$2a$10$yNuaR28GYE9S6A4vGgrMA.YtJPdnCJKpH5.U.nEntlsjqpKz3mtei"], ["updated_at", "2014-12-23 06:07:24.632636"]]
+  [1m[36m (127.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:4000/
+Completed 302 Found in 203ms (ActiveRecord: 127.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:24 +0700
+
+
+Started GET "/login" for 127.0.0.1 at 2014-12-23 13:07:27 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"12543@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '12543@gmail.com' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:07:37 +0700
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:07:59 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"12542@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '12542@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:4000/users/80
+Completed 302 Found in 74ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/80" for 127.0.0.1 at 2014-12-23 13:07:59 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "80"]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:08:00 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.8ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:08:01 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+Redirected to http://localhost:4000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:08:01 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:02 +0700
+
+
+Started GET "/login" for 127.0.0.1 at 2014-12-23 13:08:04 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"12542@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '12542@gmail.com' LIMIT 1
+Redirected to http://localhost:4000/users/80
+Completed 302 Found in 73ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/80" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 80]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "80"]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:08:14 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.4ms)
+
+
+Started GET "/users/80/edit" for 127.0.0.1 at 2014-12-23 13:08:15 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"80"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "80"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 88.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/80" for 127.0.0.1 at 2014-12-23 13:08:23 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"1254", "phone"=>"pone", "address"=>"adress", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save changes", "id"=>"80"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 80]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "80"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = '12542@gmail.com' AND "users"."id" != 80) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = 80  [["address", "adress"], ["phone", "pone"], ["updated_at", "2014-12-23 06:08:23.925615"]]
+  [1m[36m (270.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:4000/users/80
+Completed 302 Found in 279ms (ActiveRecord: 271.7ms)
+
+
+Started GET "/users/80" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "80"]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 83.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:24 +0700
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+Redirected to http://localhost:4000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:32 +0700
+
+
+Started GET "/login" for 127.0.0.1 at 2014-12-23 13:08:33 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "session"=>{"email"=>"12542@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '12542@gmail.com' LIMIT 1
+Redirected to http://localhost:4000/users/80
+Completed 302 Found in 76ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/80" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 80]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", "80"]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 80.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:08:44 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.7ms)
+
+
+Started GET "/users/80" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", "80"]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 84.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:11:45 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2014-12-23 13:11:46 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:11:48 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1[0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `forget' for #<SessionsController:0x00000004eee810>):
+  app/helpers/sessions_helper.rb:28:in `log_out'
+  app/controllers/sessions_controller.rb:18:in `destroy'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-12-23 13:12:00 +0700
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/toantv/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/toantv/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 80 LIMIT 1
+Redirected to http://localhost:4000/
+Completed 302 Found in 11ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:02 +0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-12-23 13:12:08 +0700
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_foot.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhRVrAfNv3Xc30uXIK0f3p8aos+FUuOh5SbWNBrbLho=", "user"=>{"name"=>"123458", "email"=>"12458@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = '12458@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-23 06:12:22.319766"], ["email", "12458@gmail.com"], ["name", "123458"], ["password_digest", "$2a$10$4sY8fCs6tIiGLIsvdeq73uesQZrhBzs3J51KgiRBoAsDtQ2Sbm0mq"], ["updated_at", "2014-12-23 06:12:22.319766"]]
+  [1m[35m (135.1ms)[0m  commit transaction
+Redirected to http://localhost:4000/
+Completed 302 Found in 210ms (ActiveRecord: 135.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+Processing by HomesController#home as HTML
+  Rendered homes/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_foot.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2014-12-23 13:12:22 +0700
